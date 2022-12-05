@@ -1,0 +1,42 @@
+on:
+  workflow_call:
+
+jobs:
+  prepack-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+
+      - name: prepare node
+        uses: ./.github/actions/prepare-node
+
+      - name: run prepack
+        run: npm run prepack
+
+  lint-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+
+      - name: prepare node
+        uses: ./.github/actions/prepare-node
+
+      - name: run linting
+        run: npm run lint
+
+  type-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v3
+
+      - name: prepare node
+        uses: ./.github/actions/prepare-node
+
+      - name: run typecheck
+        run: npm run typecheck

@@ -1,0 +1,9 @@
+name: pr-ci
+
+on: 
+  pull_request:
+    branches: [main, develop]
+
+jobs:
+  pr-ci:
+    uses: ./.github/workflows/ci-workflow.yml
