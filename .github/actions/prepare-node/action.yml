@@ -15,3 +15,7 @@ runs:
     - name: install node packages
       run: npm ci
       shell: bash
+
+    - name: prepare nuxt
+      run: npm run dev:prepare
+      shell: bash
