@@ -10,7 +10,7 @@ export type NuxtVuetifyOptions = Omit<
 export default defineNuxtModule<NuxtVuetifyOptions>({
   meta: {
     name: 'nuxt-vuetify',
-    configKey: 'nuxtVuetify'
+    configKey: 'vuetify'
   },
   setup: (options, nuxt) => {
     const { resolve } = createResolver(import.meta.url)

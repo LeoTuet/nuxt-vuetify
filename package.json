@@ -21,6 +21,9 @@
     "url": "https://github.com/LeoTuet/nuxt-vuetify"
   },
   "homepage": "https://github.com/LeoTuet/nuxt-vuetify#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
     "prepack": "nuxt-module-build",
     "dev": "nuxi dev playground",
