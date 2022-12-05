@@ -9,9 +9,23 @@ npm install nuxt-vuetify
 ```
 
 add the following to your `nuxt.config.ts`
+
 ```.ts
 export default defineNuxtConfig({
   modules: ['nuxt-vuetify']
+})
+```
+
+## How to configure Vuetify
+
+To configure Vuetify just put your configuration under the `nuxtVuetify` configkey
+
+```.ts
+export default defineNuxtConfig({
+  modules: ['nuxt-vuetify'],
+  nuxtVuetify: {
+    // ...your configuration goes here
+  }
 })
 ```
 
