@@ -23,6 +23,7 @@ jobs:
           node-version: '16'
 
       - run: npm ci
+      - run: npm run dev:prepare
       - run: npm run prepack
       - run: npm publish --access public
         env:
