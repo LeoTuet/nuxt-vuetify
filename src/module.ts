@@ -1,24 +1,20 @@
 import { fileURLToPath } from 'url'
 import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit'
 
-export interface ModuleOptions {
-  addPlugin: boolean
-}
+export interface NuxtVuetifyOptions {}
 
-export default defineNuxtModule<ModuleOptions>({
+export default defineNuxtModule<NuxtVuetifyOptions>({
   meta: {
-    name: 'my-module',
-    configKey: 'myModule'
+    name: 'nuxt-vuetify',
+    configKey: 'nuxtVuetify'
   },
-  defaults: {
-    addPlugin: true
-  },
-  setup (options, nuxt) {
-    if (options.addPlugin) {
-      const { resolve } = createResolver(import.meta.url)
-      const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
-      nuxt.options.build.transpile.push(runtimeDir)
-      addPlugin(resolve(runtimeDir, 'plugin'))
-    }
+  setup: (_, nuxt) => {
+    const { resolve } = createResolver(import.meta.url)
+    const runtimeDir = fileURLToPath(new URL('./runtime', import.meta.url))
+    nuxt.options.build.transpile.push(runtimeDir)
+    nuxt.options.build.transpile.push('vuetify')
+    nuxt.options.css.push('vuetify/lib/styles/main.sass')
+    nuxt.options.css.push('@mdi/font/css/materialdesignicons.css')
+    addPlugin(resolve(runtimeDir, 'plugin'))
   }
 })

@@ -1,5 +1,5 @@
 {
-  "name": "my-module",
+  "name": "nuxt-vuetify",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
@@ -21,7 +21,10 @@
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.0.0"
+    "@mdi/font": "^7.0.96",
+    "@nuxt/kit": "^3.0.0",
+    "sass": "^1.56.1",
+    "vuetify": "^3.0.3"
   },
   "devDependencies": {
     "@nuxt/module-builder": "^0.2.1",

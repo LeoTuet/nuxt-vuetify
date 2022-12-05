@@ -1,11 +1,6 @@
 import { defineNuxtConfig } from 'nuxt/config'
-import MyModule from '..'
+import NuxtVuetify from '..'
 
 export default defineNuxtConfig({
-  modules: [
-    MyModule
-  ],
-  myModule: {
-    addPlugin: true
-  }
+  modules: [NuxtVuetify]
 })

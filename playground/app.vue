@@ -1,8 +1,10 @@
 <template>
   <div>
-    Nuxt module playground!
+    <v-btn>
+      <v-icon icon="mdi-account" />
+      It works!
+    </v-btn>
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
