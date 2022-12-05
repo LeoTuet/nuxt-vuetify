@@ -1,6 +1,6 @@
-# Nuxt Vuetify Module
+# Vuetify 3 - Nuxt 3 Module
 
-A very simple plugin to make Vuetify work with Nuxt
+A very simple plugin to make Vuetify 3 work with Nuxt 3
 
 ## How to use
 
@@ -18,7 +18,7 @@ export default defineNuxtConfig({
 
 ## How to configure Vuetify
 
-To configure Vuetify just put your configuration under the `nuxtVuetify` configkey
+To configure Vuetify just put your configuration under the `nuxtVuetify` config key
 
 ```.ts
 export default defineNuxtConfig({
