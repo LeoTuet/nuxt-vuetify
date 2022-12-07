@@ -20,6 +20,14 @@
   "repository": {
     "url": "https://github.com/LeoTuet/nuxt-vuetify"
   },
+   "keywords": [
+    "nuxt",
+    "vuetify"
+    "vue",
+    "module",
+    "nuxt-vuetify",
+    "nuxt-module",
+  ],
   "homepage": "https://github.com/LeoTuet/nuxt-vuetify#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
