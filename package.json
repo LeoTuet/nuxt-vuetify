@@ -1,6 +1,6 @@
 {
   "name": "nuxt-vuetify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "type": "module",
   "exports": {
@@ -22,11 +22,11 @@
   },
    "keywords": [
     "nuxt",
-    "vuetify"
+    "vuetify",
     "vue",
     "module",
     "nuxt-vuetify",
-    "nuxt-module",
+    "nuxt-module"
   ],
   "homepage": "https://github.com/LeoTuet/nuxt-vuetify#readme",
   "publishConfig": {
