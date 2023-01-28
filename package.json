@@ -20,7 +20,7 @@
   "repository": {
     "url": "https://github.com/LeoTuet/nuxt-vuetify"
   },
-   "keywords": [
+  "keywords": [
     "nuxt",
     "vuetify",
     "vue",
@@ -45,7 +45,7 @@
     "@nuxt/kit": "^3.0.0",
     "sass": "^1.56.1",
     "vue-tsc": "^1.0.11",
-    "vuetify": "^3.0.3"
+    "vuetify": "^3.1.2"
   },
   "devDependencies": {
     "@nuxt/module-builder": "^0.2.1",
